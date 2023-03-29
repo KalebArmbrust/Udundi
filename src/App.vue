@@ -1,10 +1,10 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Explore from './components/Explore.vue'
 </script>
 
 <template>
   <main>
-    <HelloWorld />
+    <Explore />
   </main>
 </template>
 
