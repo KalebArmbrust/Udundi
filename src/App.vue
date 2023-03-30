@@ -1,5 +1,5 @@
 <script setup>
-import Explore from './components/Explore.vue'
+import Explore from './components/Explore.vue';
 </script>
 
 <template>

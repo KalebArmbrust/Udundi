@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html',
+            './src/**/*.{vue,html,js,ts,jsx,tsx}',
+          ],
+  plugins: [],
   theme: {
     extend: {
         keyframes: {
@@ -13,17 +16,34 @@ module.exports = {
                     opacity: '1',
                     transform: 'translateY(0)'
                 },
-            }
+            },
+          'expand': {
+            '0%': {
+              transform: 'scale(0) translate(0, 0)',
+          },
+            '100%': {
+                transform: 'scale(1) translate(50, -50)',
+            },
+        },
+        'contract': {
+          '0%': {
+            transform: 'scale(1) translate(0, 0)',
+        },
+          '100%': {
+              transform: 'scale(0) translate(50, -50)',
+          },
+      }
         },
         animation: {
-            'fade-in-down': 'fade-in-down 2s ease-out'
+            'fade-in-down': 'fade-in-down 2s ease-out',
+            'expand': 'expand .5s ease-in-out',
+            'contract': 'contract .5s ease-in-out',
         },
         fontFamily: {
           'Lato': ['Lato']
         },
-    },
+      },
 },
 variants: {},
-plugins: [],
 }
 
