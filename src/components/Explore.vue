@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex h-screen w-full bg-[url('../src/assets/Coding-Challenge-Image.png')] bg-cover bg-center static">
+  <div class="flex h-screen w-full bg-[url('../assets/Coding-Challenge-Image.png')] bg-cover bg-center static">
     <div class="bg-gradient-to-r from-[#611818] to-[#611818] lg:min-w-[400px] min-w-[185px]"></div>
     <div id="start" class="start" v-if="explore">
       <h1 class="animate-fade-in-down absolute bottom-0 left-0 lg:ml-[190px] lg:mb-[200px] text-[#FFFFFF] font-['Didot'] lg:text-[224px] md:text-[90px] text-[70px] font-bold ml-[30px] mb-[300px]">Explore</h1>
