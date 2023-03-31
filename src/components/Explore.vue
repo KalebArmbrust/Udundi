@@ -31,7 +31,7 @@ export default {
       </div>
     </div>
     <div id="showModal" class="animate-expand flex flex-col absolute bg-white lg:h-[630px] md:h-[70%] md:w-[50%] h-[70%] lg:w-[500px] w-[97%] md:bottom-0 md:left-0 md:ml-[50px] md:mb-[100px] lg:bottom-0 lg:left-0 lg:ml-[300px] mt-[20px] ml-[5px] lg:mb-[100px] p-5 lg:p-8" v-if="showModal">
-      <button @click="hide"><img class="ml-auto h-[18px]" src="../assets/Path.png" alt="Close Modal"></button>
+      <button @click="hide" class="animate-contract"><img class="ml-auto h-[18px] animate-contract" src="../assets/Path.png" alt="Close Modal"></button>
       <h1 class="text-[#611818] font-['Didot'] lg:text-[66px] text-[35px] font-bold">Explore</h1>
       <div class="bg-gradient-to-r from-[#611818] h-[2px] w-[150px] lg:h-[3px] lg:w-[250px] lg:mb-6 mb-2"></div>
       <p class="text-[#282828] font-Lato lg:text-[18px] text-[13px] font-normal tracking-[0.35px] leading-[22px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
@@ -53,5 +53,7 @@ export default {
 <style scoped>
 .animate-expand {
   transform-origin: bottom left;
+  margin-bottom: 200px;
+  margin-left: 200px;
 }
 </style>

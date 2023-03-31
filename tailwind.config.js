@@ -17,18 +17,27 @@ module.exports = {
                     transform: 'translateY(0)'
                 },
             },
-            'expand': {
-              '0%': {
-                transform: 'scale(0) translate(0, 0)',
-            },
-              '100%': {
-                  transform: 'scale(1) translate(50, -50)',
-              },
+          'expand': {
+            '0%': {
+              transform: 'scale(0) translate(0, 0)',
           },
+            '100%': {
+                transform: 'scale(1) translate(50, -50)',
+            },
+        },
+        'contract': {
+          '0%': {
+            transform: 'scale(1) translate(0, 0)',
+        },
+          '100%': {
+              transform: 'scale(0) translate(50, -50)',
+          },
+      }
         },
         animation: {
             'fade-in-down': 'fade-in-down 2s ease-out',
             'expand': 'expand .5s ease-in-out',
+            'contract': 'contract .5s ease-in-out',
         },
         fontFamily: {
           'Lato': ['Lato']
