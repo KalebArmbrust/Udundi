@@ -53,7 +53,5 @@ export default {
 <style scoped>
 .animate-expand {
   transform-origin: bottom left;
-  margin-bottom: 200px;
-  margin-left: 200px;
 }
 </style>
